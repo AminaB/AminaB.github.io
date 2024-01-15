@@ -171,7 +171,7 @@ img {
 .right-block {
     min-width: 200px;
     position: static;
-   /* transform: translateX(400%);*/
+    /* transform: translateX(400%);*/
     /*animation: imgAnimate 1s forwards 1s;*/
 }
 .left-block{
@@ -184,12 +184,12 @@ img {
     box-shadow: var(--box-shadow);
 
 }
- .change-text{
+.change-text{
     font-size: 1.3rem;
     font-weight: 600;
     color: black;
     line-height: 50px;
-     position: relative;
+    position: relative;
 }
 .text-content .change-text::before{
     content : '';
@@ -293,10 +293,11 @@ img {
 .skills .progress-bar {
     width: 1px;
     height: 11px;
-    transition: 0.9s;
     background-color: #8000ff;
     border-radius: 10px;
+    animation: animate-positive 3s;
 }
+
 /*Resume */
 .resume{
     background-color: white;
@@ -406,7 +407,7 @@ img {
     margin-bottom: 20px;
 }
 .layer a{
-   margin-top: 20px;
+    margin-top: 20px;
     color: #e82750;
     text-decoration: none;
     font-size: 18px;
@@ -479,7 +480,7 @@ img {
 .work-info-list-item{
     text-align: initial;
     list-style: square;
- }
+}
 .work-info-list-item::marker{
     color: #a52834;
 }
@@ -494,104 +495,53 @@ img {
     opacity: 1;
     visibility: visible;
 }
-/*.portfolio .portfolio-item {*/
-/*    margin-bottom: 30px;*/
-/*}*/
+/* contact */
+.form-area{
+    padding-top: 5%;
+}
+.row.single-form{
+    box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5) ;
+    background-color: #000;
+}
+.form-left{
+    background-color: #8000ff;
+    padding: 300px 93px;
+}
+.form-left h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 48px;
+}
+.form-left h2 span{
+    font-weight: 100;
+}
+.form-control{
+    border: 2px solid #000;
+}
+.form-right{
+    padding: 70px 100px;
+    position: relative;
+    color: #fff;
+}
 
-/*.portfolio #portfolio-flters {*/
-/*    padding: 0;*/
-/*    margin: 0 auto 35px auto;*/
-/*    list-style: none;*/
-/*    text-align: center;*/
-/*    background: #fff;*/
-/*    border-radius: 50px;*/
-/*    padding: 2px 15px;*/
-/*}*/
+.form-right button{
 
-/*.portfolio #portfolio-flters li {*/
-/*    cursor: pointer;*/
-/*    display: inline-block;*/
-/*    padding: 10px 15px 8px 15px;*/
-/*    font-size: 14px;*/
-/*    font-weight: 600;*/
-/*    line-height: 1;*/
-/*    text-transform: uppercase;*/
-/*    color: #272829;*/
-/*    margin-bottom: 5px;*/
-/*    transition: all 0.3s ease-in-out;*/
-/*}*/
+    color: #fff;
 
-/*.portfolio #portfolio-flters li:hover,*/
-/*.portfolio #portfolio-flters li.filter-active {*/
-/*    color: #e82750;*/
-/*}*/
+}
 
-/*.portfolio #portfolio-flters li:last-child {*/
-/*    margin-right: 0;*/
-/*}*/
-
-/*.portfolio .portfolio-wrap {*/
-/*    transition: 0.3s;*/
-/*    position: relative;*/
-/*    overflow: hidden;*/
-/*    z-index: 1;*/
-/*}*/
-
-/*.portfolio .portfolio-wrap::before {*/
-/*    content: "";*/
-/*    background: rgba(255, 255, 255, 0.5);*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    transition: all ease-in-out 0.3s;*/
-/*    z-index: 2;*/
-/*    opacity: 0;*/
-/*}*/
-
-/*.portfolio .portfolio-wrap .portfolio-links {*/
-/*    opacity: 1;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    bottom: -60px;*/
-/*    z-index: 3;*/
-/*    position: absolute;*/
-/*    transition: all ease-in-out 0.3s;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*}*/
-
-/*.portfolio .portfolio-wrap .portfolio-links a {*/
-/*    color: #fff;*/
-/*    font-size: 28px;*/
-/*    text-align: center;*/
-/*    background: rgba(20, 157, 221, 0.75);*/
-/*    transition: 0.3s;*/
-/*    width: 50%;*/
-/*}*/
-
-/*.portfolio .portfolio-wrap .portfolio-links a:hover {*/
-/*    background: rgba(20, 157, 221, 0.95);*/
-/*}*/
-
-/*.portfolio .portfolio-wrap .portfolio-links a+a {*/
-/*    border-left: 1px solid #37b3ed;*/
-/*}*/
-
-/*.portfolio .portfolio-wrap:hover::before {*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    bottom: 0;*/
-/*    opacity: 1;*/
-/*}*/
-
-/*.portfolio .portfolio-wrap:hover .portfolio-links {*/
-/*    opacity: 1;*/
-/*    bottom: 0;*/
-/*}*/
 /* Animation */
+@-webkit-keyframes animate-positive {
+    0%{
+        width: 0;
+    }
+}
+
+@keyframes animate-positive {
+    0%{
+        width: 0;
+    }
+}
 @keyframes imgAnimate  {
     to{
         transform: translateX(0);
@@ -613,7 +563,7 @@ img {
     }
 }
 /*Responsive*/
- .fa-xmark{
+.fa-xmark{
     display: none;
 }
 @media  screen and (max-width: 767px) {
@@ -787,6 +737,23 @@ img {
         color: white;
     }
 }
-@media (min-width:1600px) {
+@media (min-width:768px) and (max-width: 991px) {
 
+}
+@media (max-width:767px)  {
+    .form-left{
+        padding: 90px 15px;
+        text-align: center;
+    }
+    .form-left h2{
+        font-size: 25px;
+    }
+    .form-right {
+        padding: 25px;
+    }
+
+    .form-right button{
+        width: 150px;
+        padding: 12px 0;
+    }
 }
