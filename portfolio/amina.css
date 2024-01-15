@@ -174,9 +174,7 @@ img {
     /* transform: translateX(400%);*/
     /*animation: imgAnimate 1s forwards 1s;*/
 }
-.left-block{
-    min-width: 500px;
-}
+
 .information {
     min-width: 430px;
     margin-bottom: 20px;
@@ -565,6 +563,11 @@ img {
 /*Responsive*/
 .fa-xmark{
     display: none;
+}
+@media screen and  (min-width:766px){
+.left-block{
+    min-width: 500px;
+}
 }
 @media  screen and (max-width: 767px) {
     .navbar-brand {
