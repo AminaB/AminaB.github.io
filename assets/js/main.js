@@ -59,14 +59,17 @@ function closeMenu(){
 //
 // })
 //get all menu items
-var menuItems = document.querySelectorAll(".nav-item");
-for (const menuItem of menuItems) {
-  //add click events to menu items
-  menuItem.addEventListener('click', function(event) {
-    //hide menu if click on menu item
-    menu.style.display = "none";
-  });
-}
+// var menuItems = document.querySelectorAll(".nav-item");
+// for (const menuItem of menuItems) {
+//   //add click events to menu items
+//   menuItem.addEventListener('click', function(event) {
+//     //hide menu if click on menu item
+//     menu.style.display = "none";
+//   });
+// }
+$('.navbar-nav>li>a').on('click', function(){
+  $('.navbar-collapse').collapse('hide');
+});
 // animate
 let typingText = document.querySelector('.change-text');
 let listSkills=['Dev Lead at CNAV','Dev Engineer', 'DevOps Junior'];
