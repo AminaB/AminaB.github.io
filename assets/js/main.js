@@ -67,9 +67,7 @@ function closeMenu(){
 //     menu.style.display = "none";
 //   });
 // }
-$('.navbar-nav>li>a').on('click', function(){
-  $('.navbar-collapse').collapse('hide');
-});
+
 // animate
 let typingText = document.querySelector('.change-text');
 let listSkills=['Dev Lead at CNAV','Dev Engineer', 'DevOps Junior'];
