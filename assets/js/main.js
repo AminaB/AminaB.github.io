@@ -69,7 +69,7 @@ for (const menuItem of menuItems) {
 }
 // animate
 let typingText = document.querySelector('.change-text');
-let listSkills=['Dev Lead at CNAV','Developer Engineer', 'DevOps Junior'];
+let listSkills=['Dev Lead at CNAV','Dev Engineer', 'DevOps Junior'];
 let index=1;
 function replace(){
 
