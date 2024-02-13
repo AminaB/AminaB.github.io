@@ -119,7 +119,7 @@ setInterval(replace,5000);
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -210,35 +210,17 @@ setInterval(replace,5000);
     }
   });
 
-  /**
-   * Hero type effect
-   */
-  const typed = select('.typed')
-  if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
-
-  /**
-   * Skills animation
-   */
-
 
   /**
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
+    let portfolioContainer = select('.work-list');
+    let port = select('.work');
+
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
+        itemSelector: '.work'
       });
 
       let portfolioFilters = select('#portfolio-flters li', true);
@@ -253,16 +235,12 @@ setInterval(replace,5000);
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
       }, true);
     }
 
   });
-
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
 
 
@@ -281,7 +259,7 @@ setInterval(replace,5000);
 
 
   /**
-   * Initiate Pure Counter 
+   * Initiate Pure Counter
    */
 
 

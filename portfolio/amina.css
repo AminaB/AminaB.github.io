@@ -11,6 +11,9 @@ html{
     box-sizing: border-box;
 
 }
+body{
+    background-position: center top;
+}
 /* bare de navigation*/
 .burg-icon{
     display: none;
@@ -346,7 +349,10 @@ img {
 .resume .resume-item:last-child {
     padding-bottom: 0;
 }
-
+.cv a{
+    color: white;
+    text-decoration: none;
+}
 .resume .resume-item::before {
     content: "";
     position: absolute;
@@ -360,10 +366,47 @@ img {
 
 }
 /*Portfolio*/
+
+
+
+
+.portfolio #portfolio-flters {
+    padding: 0;
+    margin: 0 auto 35px auto;
+    list-style: none;
+    text-align: center;
+    background: #fff;
+    border-radius: 50px;
+    padding: 2px 15px;
+}
+
+.portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px 8px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #272829;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+    color: #e82750;
+}
+
+.portfolio #portfolio-flters li:last-child {
+    margin-right: 0;
+}
+
+
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap:40px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap:50px;
     margin-top: 50px;
 
 }
