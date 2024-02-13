@@ -11,9 +11,6 @@ html{
     box-sizing: border-box;
 
 }
-body{
-    background-position: center top;
-}
 /* bare de navigation*/
 .burg-icon{
     display: none;
@@ -135,7 +132,7 @@ h2 {
 }
 .text {
     color: #fff;
-    margin-right: 1rem;
+    margin-right: 7px;
 }
 
 img {
@@ -537,40 +534,112 @@ img {
     visibility: visible;
 }
 /* contact */
-.form-area{
-    padding-top: 5%;
+.contact-wrap {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
-.row.single-form{
-    box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5) ;
-    background-color: #000;
+
+.contact-in {
+    padding: 40px 30px;
 }
-.form-left{
-    background-color: #8000ff;
-    padding: 300px 93px;
-}
-.form-left h2{
-    color: #fff;
-    font-weight: 700;
-    font-size: 48px;
-}
-.form-left h2 span{
-    font-weight: 100;
-}
-.form-control{
-    border: 2px solid #000;
-}
-.form-right{
-    padding: 70px 100px;
-    position: relative;
+
+.contact-in:nth-child(1) {
+    flex: 30%;
+    background: url(../assets/img/contact.jpg);
     color: #fff;
 }
 
-.form-right button{
-
-    color: #fff;
-
+.contact-in:nth-child(2) {
+    flex: 45%;
+    background: #efdffb;
 }
 
+.contact-in:nth-child(3) {
+    flex: 25%;
+    padding: 0;
+}
+
+.contact-in h1 {
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contact-in h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.contact-in h2 i {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: #f5f5f5;
+    color: #000;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.contact-in p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contact-in ul {
+    padding: 0;
+    margin: 0;
+}
+
+.contact-in ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.contact-in ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50px;
+}
+
+.contact-in ul li a i {
+    font-size: 14px;
+    line-height: 30px;
+    color: #000;
+}
+
+
+.contact-in iframe {
+    width: 100%;
+    height: 100%;
+}
+/* footer */
+#footer {
+    padding: 15px;
+    color: #000;
+    left: 0;
+    top : 50px;
+    bottom: 0;
+    width: 300px;
+    z-index: 9999;
+}
+
+#footer .copyright {
+    text-align: end;
+}
 /* Animation */
 @-webkit-keyframes animate-positive {
     0%{
