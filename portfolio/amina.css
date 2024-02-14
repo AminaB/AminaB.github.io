@@ -237,9 +237,9 @@ img {
 }
 .img-hero{
 
-    max-width: 500px;
+    max-width: 400px;
     width: 100%;
-    min-height: 100%;
+    min-height: 80%;
     box-shadow: 15px 15px #000;
     border-radius: 5px;
 
@@ -252,7 +252,32 @@ img {
 }
 /*about me*/
 
+.img_about {
+    border-radius: 30%;
+    width: 230px;
+    height: 250px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    object-fit: cover;
+}
+.btn_about{
+    display: block;
+    margin: 50px auto;
+    width:  fit-content;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.5s;
+    background-color: #e82750;
 
+}
+.btn_about:hover{
+    background-color: #efdffb;
+    color: #000;
+
+}
 .section-title{
     font-size: 2rem;
     padding: 15px 0;
