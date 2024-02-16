@@ -71,23 +71,16 @@ function closeMenu(){
 // animate
 let typingText = document.querySelector('.change-text');
 let listSkills=['Dev Lead at CNAV','Dev Engineer', 'DevOps Junior'];
-let index=1;
-function replace(){
-
-  if (index < listSkills.length){
-    typingText.innerHTML=listSkills[index];
-    index=index+1
-  }else{
-    index=0
-    typingText.innerHTML=listSkills[index];
-    index=index+1
-  }
-
-
+if(typingText){
+  new Typed('.change-text',{
+    strings : listSkills,
+    loop: true,
+    typeSpeed: 100,
+    backSpeed:50,
+    backDelay:2000,
+    showCursor: false,
+  })
 }
-replace();
-setInterval(replace,5000);
-
 
 (function() {
   "use strict";
