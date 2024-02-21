@@ -8,7 +8,6 @@
 <!-- Initialize Swiper -->
 let swiper = new Swiper('.card-content', {
   // Optional parameters
-  loop: true,
   spaceBetween:32,
   grabCursor: true,
 
@@ -29,6 +28,9 @@ let swiper = new Swiper('.card-content', {
       slidesPerView:2,
     },
     968:{
+      slidesPerView:2,
+    },
+    1100:{
       slidesPerView:3,
     }
   }
