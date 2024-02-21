@@ -379,7 +379,7 @@ img {
 
 }
 .card-container{
-    padding-block: 5rem;
+    padding-block: 2rem;
 }
 .card-content{
     margin-inline: 1.5rem;
@@ -393,14 +393,13 @@ img {
 }
 .card-image{
     position: relative;
-    background-color: var(--second-color);
-    padding-top: 1.5rem;
-    margin-bottom: -.75rem;
+
 }
 .card-data{
-    background-color: var(--main-color);
+    background-color: #efdffb;
     padding: 1.5rem 2rem;
     border-radius: 1rem;
+
     text-align : center;
     position: relative;
     z-index: 10;
@@ -409,7 +408,7 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-    width: 180px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     z-index: 5;
@@ -430,7 +429,7 @@ img {
 }
 .card-name{
     font-size: 20px;
-    color:#fff;
+    color:#000;
     margin-bottom: .75rem;
 
 }
@@ -443,7 +442,7 @@ img {
     background-color: var(--second-color);
     padding: .75rem 1.5rem;
     border-radius: .25rem;
-    color : #000;
+    color : #fff;
     font-weight: 600;
 }
 .swiper-button-prev::after,
