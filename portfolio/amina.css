@@ -371,7 +371,106 @@ img {
     border-radius: 10px;
     animation: animate-positive 3s;
 }
+/*certifs*/
+.container-swp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.card-container{
+    padding-block: 5rem;
+}
+.card-content{
+    margin-inline: 1.5rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+.card-article{
+    width: 300px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.card-image{
+    position: relative;
+    background-color: var(--second-color);
+    padding-top: 1.5rem;
+    margin-bottom: -.75rem;
+}
+.card-data{
+    background-color: var(--main-color);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    text-align : center;
+    position: relative;
+    z-index: 10;
+}
+.card-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 180px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+
+}
+.card-shadow{
+    width: 200px;
+    height: 200px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 3.75rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    filter: blur(45px);
+
+}
+.card-name{
+    font-size: 20px;
+    color:#fff;
+    margin-bottom: .75rem;
+
+}
+.card-description {
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+}
+.card-button{
+    display: inline-block;
+    background-color: var(--second-color);
+    padding: .75rem 1.5rem;
+    border-radius: .25rem;
+    color : #000;
+    font-weight: 600;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+}
+.swiper-button-next,
+.swiper-button-prev {
+    width: initial;
+    height: initial;
+    font-size: 3rem;
+    color: #000;
+    display: none;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-pagination-bullet{
+    background-color: hsl(212,32%,40%);
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--second-color);
+}
 /*Resume */
 .resume{
     background-color: white;
@@ -705,8 +804,8 @@ img {
 .footer {
     margin-top:50px;
     background-color: var(--main-color);
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     color: #fff;
 }
 

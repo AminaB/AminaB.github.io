@@ -5,6 +5,36 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+<!-- Initialize Swiper -->
+let swiper = new Swiper('.card-content', {
+  // Optional parameters
+  loop: true,
+  spaceBetween:32,
+  grabCursor: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints:{
+    600:{
+      slidesPerView:2,
+    },
+    968:{
+      slidesPerView:3,
+    }
+  }
+
+  // And if we need scrollbar
+});
 // work info
     const work = document.querySelectorAll('.work-info'),
     infoButton= document.querySelectorAll('.more-info'),
