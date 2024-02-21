@@ -399,6 +399,7 @@ img {
     background-color: #efdffb;
     padding: 1.5rem 2rem;
     border-radius: 1rem;
+    min-height: 210px;
 
     text-align : center;
     position: relative;
