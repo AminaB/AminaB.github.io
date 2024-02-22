@@ -668,7 +668,7 @@ img {
     transition: opacity .4s, visibility .4s;
 }
 .work-info-content{
-    max-height: 420px;
+    max-height: 600px;
     position: relative;
     background-color: #fff;
     color: #000;
@@ -708,6 +708,10 @@ img {
 .active-work{
     opacity: 1;
     visibility: visible;
+}
+.portfolio-app-img{
+    width: 20px;
+    height: 20px;
 }
 /* contact */
 .contact-wrap {
