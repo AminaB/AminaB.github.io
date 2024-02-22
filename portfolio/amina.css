@@ -668,7 +668,6 @@ img {
     transition: opacity .4s, visibility .4s;
 }
 .work-info-content{
-    max-height: 600px;
     position: relative;
     background-color: #fff;
     color: #000;
