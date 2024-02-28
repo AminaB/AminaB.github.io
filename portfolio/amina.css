@@ -442,11 +442,22 @@ img {
 }
 .card-button{
     display: inline-block;
+    border: var(--second-color) solid 1px;
+    padding: .75rem 1.5rem;
+    border-radius: .25rem;
+    color : #000;
+    transition: background-color 0.5s;
+    background-color: transparent;
+}
+.card-button:hover{
+    display: inline-block;
     background-color: var(--second-color);
     padding: .75rem 1.5rem;
     border-radius: .25rem;
     color : #fff;
-    font-weight: 600;
+}
+.certif-info2{
+
 }
 .swiper-button-prev::after,
 .swiper-button-next::after{
