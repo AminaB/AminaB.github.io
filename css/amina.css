@@ -1,5 +1,7 @@
-
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* =======================general ===================*/
 :root{
     --box-shadow : 0px 10px #e82750;
     --main-color : #8000ff;
@@ -31,8 +33,6 @@ html{
 ::-webkit-scrollbar{
   width : 12px;
 }
-
-/*general */
 body {
     color: #1a1b1f;
     font-family: Poppins, sans-serif;
@@ -118,26 +118,18 @@ img {
     width: 116px;
 }
 
-
-
-/* bare de navigation*/
+/* ====================== bare de navigation ========================*/
 .burg-icon{
     display: none;
 }
-.close-icon{
-    display: none;
-}
 .navbar{
-    padding: 0rem 1rem 2rem 0.5rem ;
+    padding: 0 1rem 2rem 0.5rem ;
     background-color: var(--main-color);
-
-
 }
 .navbar-collapse{
     align-items: center;
     justify-content: space-between;
 }
-
 .w-nav-link {
     vertical-align: top;
     color: #222;
@@ -189,8 +181,7 @@ img {
     display: none;
 }
 
-
-/* hero*/
+/* ================= hero ======================= */
 .hero{
     width: auto;
     aspect-ratio: auto;
@@ -248,8 +239,6 @@ img {
     color: #fff;
 }
 
-
-
 .flexbox {
     justify-content: space-between;
     align-items: center;
@@ -270,7 +259,7 @@ img {
 
 
 }
-/*about me*/
+/*========================= about me=================== */
 
 .img_about {
     border-radius: 30%;
@@ -337,7 +326,7 @@ img {
     background-color: var(--main-color);
 
 }
-/* skills */
+/* =================== skills ======================== */
 .skills .progress {
     height: 60px;
     display: block;
@@ -373,7 +362,7 @@ img {
     border-radius: 10px;
     animation: animate-positive 3s;
 }
-/*certifs*/
+/* ====================== certifs =================*/
 .container-swp{
     display: flex;
     justify-content: center;
@@ -456,9 +445,6 @@ img {
     border-radius: .25rem;
     color : #fff;
 }
-.certif-info2{
-
-}
 .swiper-button-prev::after,
 .swiper-button-next::after{
     content: '';
@@ -484,7 +470,7 @@ img {
 .swiper-pagination-bullet-active{
     background-color: var(--second-color);
 }
-/*Resume */
+/* ====================== Resume ================ */
 .resume{
     background-color: white;
 }
@@ -549,13 +535,8 @@ img {
     border: 2px solid var(--second-color);
 
 }
-/*Portfolio*/
-
-
-
-
+/*===================== Portfolio =====================*/
 .portfolio #portfolio-flters {
-    padding: 0;
     margin: 0 auto 35px auto;
     list-style: none;
     text-align: center;
@@ -586,14 +567,12 @@ img {
     margin-right: 0;
 }
 
-
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap:50px;
     margin-top: 50px;
     margin-bottom: 50px;
-
 
 }
 .work{
@@ -726,7 +705,7 @@ img {
     width: 20px;
     height: 20px;
 }
-/* contact */
+/* ============ contact ======================= */
 .contact-wrap {
     width: 80%;
     height: auto;
@@ -813,13 +792,11 @@ img {
     line-height: 30px;
     color: #000;
 }
-
-
 .contact-in iframe {
     width: 100%;
     height: 100%;
 }
-/* footer */
+/* ===================== footer ==================*/
 .footer {
     margin-top:50px;
     background-color: var(--main-color);
@@ -835,7 +812,7 @@ img {
 .back-to-top{
     color: white;
 }
-/* Animation */
+/* ============= Animation ========== */
 @-webkit-keyframes animate-positive {
     0%{
         width: 0;
@@ -867,7 +844,7 @@ img {
         left: 0;
     }
 }
-/*Responsive*/
+/* ======================= Responsive ================*/
 .fa-xmark{
     display: none;
 }
@@ -1047,9 +1024,7 @@ img {
         color: white;
     }
 }
-@media (min-width:768px) and (max-width: 991px) {
 
-}
 @media (max-width:767px)  {
     .form-left{
         padding: 90px 15px;
