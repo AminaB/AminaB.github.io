@@ -1,10 +1,4 @@
-/**
-* Template Name: iPortfolio
-* Updated: Nov 17 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 <!-- Initialize Swiper -->
 let swiper = new Swiper('.card-content', {
   // Optional parameters
@@ -83,22 +77,6 @@ function closeMenu(){
 
 
 }
-// const navLinks = document.querySelectorAll('.nav-item')
-// const menuToggle = document.getElementById('navbar-toggler')
-// const bsCollapse = new bootstrap.Collapse(menuToggle)
-// navLinks.forEach((l) => {
-//   l.addEventListener('click', () => { bsCollapse.toggle() })
-//
-// })
-//get all menu items
-// var menuItems = document.querySelectorAll(".nav-item");
-// for (const menuItem of menuItems) {
-//   //add click events to menu items
-//   menuItem.addEventListener('click', function(event) {
-//     //hide menu if click on menu item
-//     menu.style.display = "none";
-//   });
-// }
 
 // animate
 let typingText = document.querySelector('.change-text');
@@ -264,28 +242,6 @@ if(typingText){
     }
 
   });
-  /**
-   * Initiate portfolio lightbox
-   */
-
-
-  /**
-   * Portfolio details slider
-   */
-
-
-  /**
-   * Testimonials slider
-   */
-
-  /**
-   * Animation on scroll
-   */
-
-
-  /**
-   * Initiate Pure Counter
-   */
 
 
 })()
