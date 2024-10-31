@@ -180,6 +180,28 @@ img {
 .hide_menu {
     display: none;
 }
+/* General styling for the bars */
+.navbar-toggler .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+}
+
+/* Rotate the bars when the navbar-toggler is active */
+.navbar-toggler.active .top-bar {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggler.active .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler.active .bottom-bar {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
 
 /* ================= hero ======================= */
 .hero{

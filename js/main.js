@@ -178,11 +178,27 @@ if(typingText){
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('body').classList.toggle('mobile-nav-active')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
+  document.addEventListener("DOMContentLoaded", function() {
+    const toggler = document.querySelector(".navbar-toggler");
+    const navbarCollapse = document.querySelector("#navbarNav");
+
+    // Toggle the active class for the "X" icon transformation
+    toggler.addEventListener("click", function() {
+      toggler.classList.toggle("active");
+    });
+
+    // Close the menu if clicking outside the navbar
+    document.addEventListener("click", function(event) {
+      const isClickInside = toggler.contains(event.target) || navbarCollapse.contains(event.target);
+
+      // If click is outside, remove the "show" and "active" classes
+      if (!isClickInside && navbarCollapse.classList.contains("show")) {
+        toggler.classList.remove("active");
+        new bootstrap.Collapse(navbarCollapse).hide();
+      }
+    });
+  });
+
 
   /**
    * Scrool with ofset on links with a class name .scrollto
