@@ -56,11 +56,11 @@ let swiper = new Swiper('.card-content', {
       }
   )
 // menu
-    var open = document.getElementById('burg-icon');
-    var close = document.getElementById('close-icon');
-    var close2 = document.getElementById('close');
-    var menu_list = document.getElementById('menu-list');
-    var menu = document.getElementById("navbar-toggler");
+const open = document.getElementById('burg-icon');
+const close = document.getElementById('close-icon');
+const close2 = document.getElementById('close');
+const menu_list = document.getElementById('menu-list');
+const menu = document.getElementById("navbar-toggler");
 
 function openMenu(){
     menu.style.display = "block";
