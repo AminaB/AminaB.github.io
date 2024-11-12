@@ -131,9 +131,9 @@ img {
 
 }
 .paragraph{
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: justify;
-    margin:20px 0 15px;
+    margin:10px 0 15px;
 }
 
 .w-container{
@@ -355,15 +355,24 @@ img {
 }
 
 .email-btn {
-        display: block;
+        display: inline-block;
         margin: 0 auto;
-        width:  fit-content;
-        padding: 10px 20px;
-        border-radius: 6px;
+
+        padding: .75rem 1.5rem;
+        border-radius: .25rem;
         text-decoration: none;
         color: #fff;
         transition: background-color 0.5s;
         background-color: var(--second-color);
+}
+.email-btn:hover {
+    display: inline-block;
+    border: var(--second-color) solid 1px;
+    padding: .75rem 1.5rem;
+    border-radius: .25rem;
+    color : #000;
+    transition: background-color 0.5s;
+    background-color: transparent;
 }
 /* =================== skills ======================== */
 
@@ -512,34 +521,33 @@ img {
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: #fff; /* Change arrow color */
-    background-color: rgba(0, 0, 0, 0.5); /* Add background */
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 40px;
     height: 40px;
-    border-radius: 50%; /* Rounded buttons */
+    border-radius: 50%;
 }
 
 /* Hover effect */
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
-    transform: scale(1.1); /* Slightly larger on hover */
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
 }
 
 /* Customize arrow size */
 .swiper-button-next::after,
 .swiper-button-prev::after {
-    font-size: 18px; /* Adjust arrow icon size */
+    font-size: 18px;
 }
 
 /* Optional: adjust position */
 .swiper-button-next {
-    right: 2px; /* Adjust right-side positioning */
+    right: 2px;
 
 }
-
 .swiper-button-prev {
-    left: 2px; /* Adjust left-side positioning */
+    left: 2px;
 }
 
 .swiper-pagination-bullet{
@@ -556,7 +564,7 @@ img {
 
 .resume .resume-title {
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 500;
     margin-top: 20px;
     margin-bottom: 20px;
     color: #050d18;
@@ -575,7 +583,7 @@ img {
     font-weight: 600;
     text-transform: uppercase;
     color: #050d18;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .resume .resume-item h5 {
@@ -592,7 +600,7 @@ img {
 }
 
 .resume .resume-item ul li {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .resume .resume-item:last-child {
@@ -602,17 +610,25 @@ img {
     color: white;
     text-decoration: none;
 }
-.resume .resume-item::before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
-    left: -11px;
-    top: 0;
-    background: var(--main-color);
-    border: 2px solid var(--second-color);
 
+.resume-container {
+    position: relative;
+}
+.download-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 10;
+}
+.resume-container:hover .download-btn {
+    display: block;
+    background-color:var(--second-color);
+
+}
+.resume-container img {
+    border-radius: 8px;
 }
 /*===================== Portfolio =====================*/
 .portfolio #portfolio-flters {
@@ -719,10 +735,15 @@ img {
     text-decoration: none;
     color: #000;
     transition: background-color 0.5s;
+
 }
 .more-btn:hover{
     background-color: var(--second-color);
     color: white;
+
+}
+.more-info{
+    cursor: pointer;
 }
 .work-info{
     position: fixed;
@@ -739,8 +760,8 @@ img {
     transition: opacity .4s, visibility .4s;
 }
 .work-info-content{
-    max-height: 600px;
     position: relative;
+    max-width: 40%;
     background-color: #fff;
     color: #000;
     padding: 3.5rem 1.5rem;
