@@ -472,7 +472,7 @@ img {
 .card-img{
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 300px;
     width: 100%;
     margin: 0 auto;
     position: relative;
@@ -1096,7 +1096,9 @@ img {
         margin-bottom: 0;
         padding-top: 0;
     }
-
+    .card-img{
+        width: 100%;
+    }
     .nav-link {
         border-bottom-style: none;
         padding-top: 20px;
