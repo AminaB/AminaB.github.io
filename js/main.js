@@ -80,7 +80,7 @@ function closeMenu(){
 
 // animate
 let typingText = document.querySelector('.change-text');
-let listSkills=['Dev Lead at CNAV','Dev Engineer', 'DevOps Junior'];
+let listSkills=['Dev Lead at CNAV','Dev Engineer', 'DevOps Engineer'];
 if(typingText){
   new Typed('.change-text',{
     strings : listSkills,
